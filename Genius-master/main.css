@@ -1,0 +1,125 @@
+/* todo: arrumar posicionamento da div perdeu */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Sarala:wght@700&display=swap');
+
+:root {
+    --color-a: #e74c3c;
+    --color-b: #14F535;
+    --color-c: #58DADB;
+    --color-d: #EBE750;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    background-color: gray;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@keyframes piscadela {
+    50% {
+        background-color: white;
+    }
+}
+section{
+    margin-top: 100px;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Perdeu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color:red;
+    visibility: hidden;
+    margin-top: 100px;
+    height: 60vmin;
+    width: 302vmin;
+    font-size: 100px;
+}
+.row{
+    background-color: white;
+    border-radius: 100%;
+    color: #141414;
+    padding: 15px;
+    bottom: 10px;
+    position: absolute;
+    top: 50%; /* posiciona na metade da tela */
+    margin-top: -25px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -100px; /* e retrocede metade da largura */
+    /* display: none; retira tudo até o espaço do elemento */
+    visibility: hidden; /*matem o espaço ocupado pelo elemento escondido*/
+    
+    margin: -108px 381px 350px -27px;
+}
+span{
+    font-size: 100px;
+}
+div.pontuacao {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    left: 0;
+    right: 0;
+    padding: 5vmin;
+    background-color: #00000099;
+    color: #FFFFFF;
+}
+main {
+    margin-top: 100px;
+    height: 50vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main>div {
+    width: 50%;
+    flex: none;
+}
+
+main>div:nth-child(1) {
+    background-color: var(--color-a);
+    border-radius: 50%;
+}
+
+main>div:nth-child(2) {
+    background-color: var(--color-b);
+}
+
+main>div:nth-child(3) {
+    background-color: var(--color-c);
+}
+
+main>div:nth-child(4) {
+    background-color: var(--color-d);
+    border-radius: 50%;
+}
+
+main>div.animate {
+    /* background-color: white; */
+    /* usado no exemplo transition */
+    animation: piscadela .3s ease-in-out;
+    /* animation-name: piscadela;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+}
+
+
