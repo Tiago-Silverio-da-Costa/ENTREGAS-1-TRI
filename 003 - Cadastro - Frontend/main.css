@@ -22,7 +22,8 @@ body {
 header {
     padding: .25em;
     background-color: var(--ascent-color);
-    color: white
+    color: white;
+    height:4vmin;
 }
 
 main {
@@ -41,7 +42,7 @@ main {
     margin: 2em;
     position: relative;
     border: 3px solid #3C6DD4;
-
+    width: 50vmin;
 }
 
 .modal .bt-close {
@@ -51,8 +52,9 @@ main {
     right: -.5em;
     top: -.5em;   
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid white;
     color: red;
+    font-size: 15px;
     background-color: white;
     cursor: pointer;
 }
@@ -90,18 +92,21 @@ main {
 }
 
 #nome{
-    border-radius: 100px;
-    border: 2px solid ;
+    border-radius: 10px;
+    border: 2px solid #525E6E;
+    height: 4vmin;
 }
 
 #dataNasc{
-    border-radius: 100px;
+    border-radius: 10px;
     border: 2px solid #3C6DD4;
+    height: 4vmin;
 }
 
 #matricula{
-    border-radius: 100px;
-    border: 2px solid ;
+    border-radius: 10px;
+    border: 2px solid #525E6E;
+    height: 4vmin;
 }
 
 
@@ -113,6 +118,7 @@ main {
     margin-left:auto;
     margin-right:auto;
     width:20vmin;
+    height:3vmin;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -122,6 +128,8 @@ main {
     background-color: #3C6DD4;
     color: white;
     font-family: 'Roboto', sans-serif;
+    width:10vmin;
+    height:3vmin;
 }
 
 .bt-pes{
@@ -130,5 +138,24 @@ main {
     background-color: #3C6DD4;
     color: white;
     font-family: 'Roboto', sans-serif;
+    width:10vmin;
+    height:3vmin;
 }
 
+.fa-user:before {
+    content: "\f007";
+    position:absolute;
+    margin: 15px 100px 100px 19px;
+}
+
+.in-pes{
+    width:20vmin;
+    height:3vmin;
+    border-radius: 100px;
+    border:2px solid #3C6DD4;
+}
+
+img{
+    margin: 5px 100px 100px 11px;
+    position: absolute;
+}
